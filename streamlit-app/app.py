@@ -1,9 +1,16 @@
+import os
+
+# 作業ディレクトリを正しい場所に設定
+os.chdir('/workspaces/streamlit-app/streamlit-app/')
+print("Working Directory Set To:", os.getcwd())
+@st.cache_data
+
 import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
 
 # データの読み込み
-@st.cache
+@st.cache_data
 def load_data():
     facilities = pd.read_csv('facilities_long.csv')  # 軒数データ
     rooms = pd.read_csv('rooms_long.csv')  # 客室数データ
