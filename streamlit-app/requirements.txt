@@ -1,0 +1,9 @@
+<<<<<<< HEAD
+streamlit
+pandas
+plotly
+=======
+streamlit
+pandas
+plotly
+>>>>>>> 285891ef4af8c4eaeca11683f9ef223ccf134de0
