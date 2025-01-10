@@ -1,10 +1,3 @@
-import os
-
-# 作業ディレクトリを正しい場所に設定
-os.chdir('/workspaces/streamlit-app/streamlit-app/')
-print("Working Directory Set To:", os.getcwd())
-@st.cache_data
-
 import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
