@@ -67,7 +67,7 @@ fig_all.add_trace(go.Bar(
     x=years_all, y=rooms_data_all,
     name='客室数（室）',
     marker_color='lightblue',
-    yaxis='y2'
+    yaxis='y1'
 ))
 
 # 収容人数（棒グラフ）
@@ -75,7 +75,7 @@ fig_all.add_trace(go.Bar(
     x=years_all, y=capacity_data_all,
     name='収容人数（人）',
     marker_color='cornflowerblue',
-    yaxis='y2'
+    yaxis='y1'
 ))
 
 # 軒数（折れ線グラフ最前面、濃い青色）
@@ -85,7 +85,7 @@ fig_all.add_trace(go.Scatter(
     name='軒数（軒）',
     line=dict(color='darkblue', width=2),
     marker=dict(size=8),
-    yaxis='y1',
+    yaxis='y2',
     hovertemplate='年: %{x}<br>軒数: %{y:,}軒<extra></extra>'))
 
 # レイアウト設定
